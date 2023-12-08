@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         TabLayoutMediator(binding.tabs, binding.vpNews) { tab, position ->
             when (position) {
-                0 -> tab.icon = ContextCompat.getDrawable(this, R.drawable.vector)
-                1 -> tab.icon = ContextCompat.getDrawable(this, R.drawable.ncb)
+                0 -> tab.icon = ContextCompat.getDrawable(this, R.drawable.ncb)
+                1 -> tab.icon = ContextCompat.getDrawable(this, R.drawable.vector)
                 2 -> tab.text = "Antara"
             }
         }.attach()

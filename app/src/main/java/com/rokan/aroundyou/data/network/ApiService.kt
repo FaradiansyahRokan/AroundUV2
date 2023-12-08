@@ -8,7 +8,7 @@ import retrofit2.http.Query
 interface ApiService {
 
 //CNCB
-    @GET("/cnbc/news")
+    @GET("/cnbc/news/")
     fun getCNBCNewsNews(
         @Query("q") q: String = "news",
         @Query("language") language: String = "id",
@@ -24,9 +24,9 @@ interface ApiService {
         @Query("sortBy") sortBy: String = "relevancy"
     ): Call<NewsResponse>
 
-    @GET("/cnbc/investment")
+    @GET("/cnbc/market")
     fun getCNBCInvestmentNews(
-        @Query("q") q: String = "investment",
+        @Query("q") q: String = "market",
         @Query("language") language: String = "id",
         @Query("pageSize") pageSize: Int = 10,
         @Query("sortBy") sortBy: String = "relevancy"
